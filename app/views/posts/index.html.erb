@@ -17,6 +17,7 @@
      <%= time_ago_in_words ( post.created_at) %>
      </p>
      <%= link_to 'view article', post, class:'button is-black' %>
+     <%= link_to 'edit article', edit_post_path, post, class:'button is-black' %>
   </footer>
 </div>
 <% end %>
