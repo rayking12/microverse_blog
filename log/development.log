@@ -271,3 +271,147 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 65ms (Views: 61.3ms | ActiveRecord: 0.0ms | Allocations: 3687)
 
 
+Started GET "/" for 127.0.0.1 at 2021-01-13 11:50:58 +0100
+Started GET "/" for 127.0.0.1 at 2021-01-13 11:50:59 +0100
+  [1m[35m (67.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#new as HTML
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 42.9ms | Allocations: 331)
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+[Webpacker] Compiling...
+[Webpacker] Compiling...
+Started GET "/" for 127.0.0.1 at 2021-01-13 11:53:14 +0100
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Compiling...
+Started GET "/" for 127.0.0.1 at 2021-01-13 11:54:17 +0100
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 39)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /mnt/c/Users/PC/Desktop/Microverse/microverse_blog/public/packs
+[Webpacker] warning ../../../package.json: No license field
+
+[Webpacker] Hash: 415a948d492e21802f43
+Version: webpack 4.46.0
+Time: 111864ms
+Built at: 01/13/2021 11:56:13 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+[Webpacker] Compiled all packs in /mnt/c/Users/PC/Desktop/Microverse/microverse_blog/public/packs
+[Webpacker] Compiled all packs in /mnt/c/Users/PC/Desktop/Microverse/microverse_blog/public/packs
+[Webpacker] warning ../../../package.json: No license field
+
+[Webpacker] Hash: 415a948d492e21802f43
+Version: webpack 4.46.0
+Time: 112251ms
+Built at: 01/13/2021 11:56:13 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 182371.4ms | Allocations: 10400)
+[Webpacker] warning ../../../package.json: No license field
+
+[Webpacker] Hash: 415a948d492e21802f43
+Version: webpack 4.46.0
+Time: 111752ms
+Built at: 01/13/2021 11:56:13 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 311982.6ms | Allocations: 259081)
+Completed 200 OK in 183043ms (Views: 182609.7ms | ActiveRecord: 0.0ms | Allocations: 12550)
+
+
+Completed 200 OK in 313331ms (Views: 313097.9ms | ActiveRecord: 0.0ms | Allocations: 270044)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 312902.1ms | Allocations: 267916)
+Completed 200 OK in 314648ms (Views: 313761.7ms | ActiveRecord: 6.5ms | Allocations: 277872)
+
+
+[Webpacker] Compiled all packs in /mnt/c/Users/PC/Desktop/Microverse/microverse_blog/public/packs
+[Webpacker] warning ../../../package.json: No license field
+
+[Webpacker] Hash: 415a948d492e21802f43
+Version: webpack 4.46.0
+Time: 26222ms
+Built at: 01/13/2021 11:56:38 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 141213.2ms | Allocations: 17286)
+Completed 200 OK in 142160ms (Views: 141610.8ms | ActiveRecord: 0.0ms | Allocations: 17704)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-13 13:00:47 +0100
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1139.1ms | Allocations: 4073)
+Completed 200 OK in 1542ms (Views: 1148.6ms | Allocations: 4467)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-13 13:01:36 +0100
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 440.5ms | Allocations: 6974)
+Completed 200 OK in 467ms (Views: 457.6ms | Allocations: 7363)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-13 13:01:42 +0100
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 237.9ms | Allocations: 4252)
+Completed 200 OK in 263ms (Views: 248.9ms | Allocations: 4641)
+
+
