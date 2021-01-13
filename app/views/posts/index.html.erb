@@ -1,10 +1,24 @@
 <% content_for :page_title, "Home" %>
 
 
-<% @posts.each  do  |post| %>
-<h1><%= post.title %></h1>
-<h5><% post.authour %></h5>
-<p> <%= post.content %></p>
- <%= time_ago_in_words ( post.created_at) %>
+<div class="section">
+    <div class="container">
+    <% @posts.each  do  |post| %>
+    <div class="card">
+  <div class="card-content">
+ <h1 class="title"><%= post.title %></h1>
+  </div>
+  <h5 class="is-size-3"><% post.authour %></h5>
+  <footer class="card-footer">
+    <p class="card-footer-item">
+        <%= post.content %>
+     </p>
+     <p class="footer-item">
+     <%= time_ago_in_words ( post.created_at) %>
+     </p>
+     <%= link_to 'view article', post, class:'button is-black' %>
+  </footer>
+</div>
 <% end %>
-
+    </div>
+</div>

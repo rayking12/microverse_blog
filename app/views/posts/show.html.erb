@@ -1,4 +1,13 @@
-<%= content_for :page_title, @post.title + " by " + @post.authour %>
+<%= content_for :page_title, @post.title %>
+  
 
-<div class="container is-centered is-size-4">
-<h1><%= @post.content %></div>
+<div class="section">
+<div class="container has-text-centered">
+<h2 class="title ">
+<%= @post.authour %>
+</h2>
+<p >
+<%= @post.content%>
+</p>
+</div>
+</div>
