@@ -415,3 +415,524 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 263ms (Views: 248.9ms | Allocations: 4641)
 
 
+Started GET "/" for 127.0.0.1 at 2021-01-13 13:13:29 +0100
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 229.1ms | Allocations: 109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1607.7ms | Allocations: 4263)
+Completed 200 OK in 3528ms (Views: 2331.7ms | Allocations: 5371)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-13 13:13:39 +0100
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 457.8ms | Allocations: 3975)
+Completed 200 OK in 508ms (Views: 504.9ms | Allocations: 4365)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-13 13:13:45 +0100
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 739.7ms | Allocations: 3442)
+Completed 200 OK in 933ms (Views: 856.5ms | Allocations: 3831)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-13 13:14:36 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 237.5ms | Allocations: 4038)
+Completed 200 OK in 247ms (Views: 241.9ms | Allocations: 4661)
+
+
+Started GET "/" for 127.0.0.1 at 2021-01-13 13:28:40 +0100
+Started GET "/new" for 127.0.0.1 at 2021-01-13 13:28:58 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 429.7ms | Allocations: 1797)
+  Rendered layout layouts/application.html.erb (Duration: 2272.5ms | Allocations: 1867)
+Completed 500 Internal Server Error in 4761ms (Allocations: 2949)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1> Hello devs </h1>
+
+<div class="section">
+<%= form_for @post do |f|%>
+<div class="field">
+    <div class="control">
+        <%= f.input :author input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+    </div>
+</div>
+<div class="field">
+    <div class="control">
+        <%= f.input :title input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+    </div>
+</div>
+<div class="field">
+    <div class="control">
+        <%= f.input :content input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+    </div>
+</div>
+</div>
+
+):
+1:    <h1> Hello devs </h1>
+2:    
+3:    <div class="section">
+4:    <%= form_for @post do |f|%>
+5:    <div class="field">
+6:        <div class="control">
+7:            <%= f.input :author input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+8:        </div>
+9:    </div>
+10:    <div class="field">
+11:        <div class="control">
+12:            <%= f.input :title input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+13:        </div>
+14:    </div>
+15:    <div class="field">
+16:        <div class="control">
+17:            <%= f.input :content input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+18:        </div>
+19:    </div>
+20:    </div>
+  
+app/views/posts/index.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:7: Can't assign to false
+app/views/posts/index.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:12: Can't assign to false
+app/views/posts/index.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:17: Can't assign to false
+app/views/posts/index.html.erb:23: syntax error, unexpected end-of-input, expecting `end'
+app/views/posts/index.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:7: Can't assign to false
+app/views/posts/index.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:12: Can't assign to false
+app/views/posts/index.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:17: Can't assign to false
+app/views/posts/index.html.erb:23: syntax error, unexpected end-of-input, expecting `end'
+app/views/posts/index.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:7: Can't assign to false
+app/views/posts/index.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:12: Can't assign to false
+app/views/posts/index.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:17: Can't assign to false
+app/views/posts/index.html.erb:23: syntax error, unexpected end-of-input, expecting `end'
+app/views/posts/index.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:7: Can't assign to false
+app/views/posts/index.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:12: Can't assign to false
+app/views/posts/index.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:17: Can't assign to false
+app/views/posts/index.html.erb:23: syntax error, unexpected end-of-input, expecting `end'
+app/views/posts/index.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:7: Can't assign to false
+app/views/posts/index.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:12: Can't assign to false
+app/views/posts/index.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:17: Can't assign to false
+app/views/posts/index.html.erb:23: syntax error, unexpected end-of-input, expecting `end'
+app/views/posts/index.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:7: Can't assign to false
+app/views/posts/index.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:12: Can't assign to false
+app/views/posts/index.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/index.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:17: Can't assign to false
+app/views/posts/index.html.erb:23: syntax error, unexpected end-of-input, expecting `end'
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+Started GET "/posts/new" for 127.0.0.1 at 2021-01-13 13:30:07 +0100
+Processing by PostsController#new as HTML
+  [1m[35m (111.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:6:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 26.9ms | Allocations: 99)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1064.1ms | Allocations: 4602)
+Completed 200 OK in 2878ms (Views: 1277.3ms | ActiveRecord: 228.3ms | Allocations: 8801)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-01-13 13:30:54 +0100
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 13.8ms | Allocations: 1168)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 1233)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms | Allocations: 2311)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1> Hello devs </h1>
+
+<div class="section">
+<%= form_for @post do |f|%>
+<div class="field">
+    <div class="control">
+        <%= f.input :author input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+    </div>
+</div>
+<div class="field">
+    <div class="control">
+        <%= f.input :title input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+    </div>
+</div>
+<div class="field">
+    <div class="control">
+        <%= f.input :content input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+    </div>
+</div>
+</div>
+):
+1:    <h1> Hello devs </h1>
+2:    
+3:    <div class="section">
+4:    <%= form_for @post do |f|%>
+5:    <div class="field">
+6:        <div class="control">
+7:            <%= f.input :author input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+8:        </div>
+9:    </div>
+10:    <div class="field">
+11:        <div class="control">
+12:            <%= f.input :title input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+13:        </div>
+14:    </div>
+15:    <div class="field">
+16:        <div class="control">
+17:            <%= f.input :content input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+18:        </div>
+19:    </div>
+20:    </div>
+  
+app/views/posts/new.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:7: Can't assign to false
+app/views/posts/new.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:12: Can't assign to false
+app/views/posts/new.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:17: Can't assign to false
+app/views/posts/new.html.erb:22: syntax error, unexpected end-of-input, expecting `end'
+app/views/posts/new.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:7: Can't assign to false
+app/views/posts/new.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:12: Can't assign to false
+app/views/posts/new.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:17: Can't assign to false
+app/views/posts/new.html.erb:22: syntax error, unexpected end-of-input, expecting `end'
+app/views/posts/new.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:7: Can't assign to false
+app/views/posts/new.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:12: Can't assign to false
+app/views/posts/new.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:17: Can't assign to false
+app/views/posts/new.html.erb:22: syntax error, unexpected end-of-input, expecting `end'
+app/views/posts/new.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:7: Can't assign to false
+app/views/posts/new.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:12: Can't assign to false
+app/views/posts/new.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:17: Can't assign to false
+app/views/posts/new.html.erb:22: syntax error, unexpected end-of-input, expecting `end'
+app/views/posts/new.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:7: Can't assign to false
+app/views/posts/new.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:12: Can't assign to false
+app/views/posts/new.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:17: Can't assign to false
+app/views/posts/new.html.erb:22: syntax error, unexpected end-of-input, expecting `end'
+app/views/posts/new.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:7: Can't assign to false
+app/views/posts/new.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:12: Can't assign to false
+app/views/posts/new.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:17: Can't assign to false
+app/views/posts/new.html.erb:22: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/posts/new" for 127.0.0.1 at 2021-01-13 13:31:53 +0100
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 13.1ms | Allocations: 1183)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 1248)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.0ms | Allocations: 2323)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1> Hello devs </h1>
+
+<div class="section">
+<%= form_for @post do |f|%>
+<div class="field">
+    <div class="control">
+        <%= f.input :author input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+    </div>
+</div>
+<div class="field">
+    <div class="control">
+        <%= f.input :title input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+    </div>
+</div>
+<div class="field">
+    <div class="control">
+        <%= f.input :content input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+    </div>
+</div>
+<%end%>
+</div>
+):
+1:    <h1> Hello devs </h1>
+2:    
+3:    <div class="section">
+4:    <%= form_for @post do |f|%>
+5:    <div class="field">
+6:        <div class="control">
+7:            <%= f.input :author input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+8:        </div>
+9:    </div>
+10:    <div class="field">
+11:        <div class="control">
+12:            <%= f.input :title input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+13:        </div>
+14:    </div>
+15:    <div class="field">
+16:        <div class="control">
+17:            <%= f.input :content input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+18:        </div>
+19:    </div>
+20:    <%end%>
+21:    </div>
+  
+app/views/posts/new.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:7: Can't assign to false
+app/views/posts/new.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:12: Can't assign to false
+app/views/posts/new.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:17: Can't assign to false
+app/views/posts/new.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:7: Can't assign to false
+app/views/posts/new.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:12: Can't assign to false
+app/views/posts/new.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:17: Can't assign to false
+app/views/posts/new.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:7: Can't assign to false
+app/views/posts/new.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:12: Can't assign to false
+app/views/posts/new.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:17: Can't assign to false
+app/views/posts/new.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:7: Can't assign to false
+app/views/posts/new.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:12: Can't assign to false
+app/views/posts/new.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:17: Can't assign to false
+app/views/posts/new.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:7: Can't assign to false
+app/views/posts/new.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:12: Can't assign to false
+app/views/posts/new.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:17: Can't assign to false
+app/views/posts/new.html.erb:7: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:7: Can't assign to false
+app/views/posts/new.html.erb:12: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:12: Can't assign to false
+app/views/posts/new.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:17: Can't assign to false
+Started GET "/posts/new" for 127.0.0.1 at 2021-01-13 13:33:26 +0100
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 45.9ms | Allocations: 2063)
+  Rendered layout layouts/application.html.erb (Duration: 135.3ms | Allocations: 2127)
+Completed 500 Internal Server Error in 217ms (ActiveRecord: 0.0ms | Allocations: 3202)
+
+
+  
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x00007fd670e259e8>):
+    4: <%= form_for @post do |f|%>
+    5: <div class="field">
+    6:     <div class="control">
+    7:         <%= f.input :author, input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+    8:     </div>
+    9: </div>
+   10: <div class="field">
+  
+app/views/posts/new.html.erb:7
+app/views/posts/new.html.erb:4
+Started GET "/posts/new" for 127.0.0.1 at 2021-01-13 13:37:05 +0100
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 26.2ms | Allocations: 1962)
+  Rendered layout layouts/application.html.erb (Duration: 122.9ms | Allocations: 2026)
+Completed 500 Internal Server Error in 255ms (Allocations: 3100)
+
+
+  
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x00007fd671338d68>):
+    4: <%= form_for @post do |f|%>
+    5: <div class="field">
+    6:     <div class="control">
+    7:         <%= f.input :author, input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+    8:     </div>
+    9: </div>
+   10: <div class="field">
+  
+app/views/posts/new.html.erb:7
+app/views/posts/new.html.erb:4
+Started GET "/posts/new" for 127.0.0.1 at 2021-01-13 13:39:06 +0100
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 9223.5ms | Allocations: 20855)
+  Rendered layout layouts/application.html.erb (Duration: 9616.9ms | Allocations: 20925)
+Completed 500 Internal Server Error in 9919ms (Allocations: 21999)
+
+
+  
+ActionView::Template::Error (undefined method `author' for #<Post:0x00007fd6716279c0>
+Did you mean?  authour
+               authour?
+               authour=):
+    4: <%= simple_form_for @post do |f|%>
+    5: <div class="field">
+    6:     <div class="control">
+    7:         <%= f.input :author, input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+    8:     </div>
+    9: </div>
+   10: <div class="field">
+  
+app/views/posts/new.html.erb:7
+app/views/posts/new.html.erb:4
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/posts/new" for 127.0.0.1 at 2021-01-13 13:42:10 +0100
+Processing by PostsController#new as HTML
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:6:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 259.7ms | Allocations: 7085)
+  Rendered layout layouts/application.html.erb (Duration: 793.0ms | Allocations: 7153)
+Completed 500 Internal Server Error in 1975ms (ActiveRecord: 9.9ms | Allocations: 11001)
+
+
+  
+ActionView::Template::Error (undefined method `author' for #<Post:0x00007fffce2f3480>
+Did you mean?  authour
+               authour?
+               authour=):
+    4: <%= simple_form_for @post do |f|%>
+    5: <div class="field">
+    6:     <div class="control">
+    7:         <%= f.input :author, input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+    8:     </div>
+    9: </div>
+   10: <div class="field">
+  
+app/views/posts/new.html.erb:7
+app/views/posts/new.html.erb:4
+Started GET "/posts/new" for 127.0.0.1 at 2021-01-13 13:44:27 +0100
+  [1m[35m (49.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 84.2ms | Allocations: 5996)
+  Rendered layout layouts/application.html.erb (Duration: 455.3ms | Allocations: 6060)
+Completed 500 Internal Server Error in 858ms (ActiveRecord: 0.0ms | Allocations: 7134)
+
+
+  
+ActionView::Template::Error (undefined method `author' for #<Post:0x00007fd670e66ad8>
+Did you mean?  authour
+               authour?
+               authour=):
+    4: <%= simple_form_for @post do |f|%>
+    5: <div class="field">
+    6:     <div class="control">
+    7:         <%= f.input :author, input_html: {class: 'input'} ,wrapper:false, label_html: {class:'label'} %>
+    8:     </div>
+    9: </div>
+   10: <div class="field">
+  
+app/views/posts/new.html.erb:7
+app/views/posts/new.html.erb:4
+Started GET "/posts/new" for 127.0.0.1 at 2021-01-13 13:45:15 +0100
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 462.0ms | Allocations: 8296)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2445.5ms | Allocations: 12140)
+Completed 200 OK in 2672ms (Views: 2638.8ms | ActiveRecord: 0.0ms | Allocations: 13248)
+
+

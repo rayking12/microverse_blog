@@ -1,8 +1,17 @@
 class PostsController < ApplicationController
-    def index
+  def index
         
-    end
-    def new
+  end
+  def new
         @post = Post.new
-    end
+  end
+
+  private
+  def params
+        @post.find()
+  end
+
+  def post_params
+        params.require(:post).permit(:author, :title, :content)
+  end
 end
