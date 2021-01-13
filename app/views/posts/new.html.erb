@@ -1,4 +1,6 @@
-<h1> Hello devs </h1>
+<%=  content_for :page_title, "New Post"  %>
+<div class="container has-text-centered mt-4"> <h1 class=" is-size-4"> Please fill in the form to create a new post </h1> </div>
+
 
 <div class="section">
 <%= simple_form_for @post do |f|%>
@@ -17,6 +19,6 @@
         <%= f.input  :content, input_html: {class: 'textarea'} ,wrapper:false, label_html: {class:'label'} %>
     </div>
 </div>
-<%= link_to 'create new post', new_post_path, class:'button is-black' %>
+<%= f.button :submit, 'create new post', class: 'button is-black' %>
 <%end%>
 </div>
